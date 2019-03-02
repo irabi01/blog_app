@@ -6,5 +6,5 @@ router = routers.DefaultRouter()
 router.register('articles', views.ArticleView)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('lists/', include(router.urls))
 ]

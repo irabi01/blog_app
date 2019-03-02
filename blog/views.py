@@ -5,5 +5,5 @@ from .serializers import ArticleSerializer
 # Create your views here.
 
 class ArticleView(viewsets.ModelViewSet):
-    queryset = Article.objects.all()
+    queryset = Article.objects.all().order_by('-id')
     serializer_class = ArticleSerializer
